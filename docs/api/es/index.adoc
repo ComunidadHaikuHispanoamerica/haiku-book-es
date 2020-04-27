@@ -1,0 +1,30 @@
+Más abajo encontrará la documentación sobre la Interfaz de programación de aplicaciones (API por sus siglas en inglés) del sistema operativo Haiku. En esta API podemos apreciar el funcionamiento interno del sistema operativo, lo que hace posible a los desarrolladores programar aplicaciones y controladores de dispositivos nativos en el lenguaje de programación C++. Por favor, consulte la https://api.haiku-os.org[versión en línea] para obtener la versión más reciente de este documento. Si Usted desea ayudar con el desarrollo de este documento consulte en la https://www.freelists.org/list/haiku-doc[lista de correo de documentación]. Para conocer las pautas sobre cómo colaborar en la documentación de la API véase la página sobre link:apidoc.adoc[cómo documentar la API]. En la página link:credits.adoc[Créditos] podrá encontrarse la lista de quienes colaboraron en su elaboración. La documentación de la API es un proceso en constante crecimiento, por lo que cualquier ayuda es bienvenida.
+
+En la API de Haiku existe fundamento en la API de BeOS R5, aunque podemos apreciar cambios y adiciones en cuanto el equipo de programadores ha considerado apropiado. En la página link:compatibility.adoc[Incompatibilidades en la API a nivel de aplicaciones con BeOS] se encuentran detalladas las diferencias en la compatibilidad con BeOS. Asimismo, en las secciones indicadas se señalan las clases y métodos nuevos, además de los cambios en la API donde existe incompatibilidad con la API de BeOS R5.
+
+Puede encontrarse la referencia completa a la API de BeOS R5 en la web en el https://haiku-os.org/legacy-docs/bebook/[Libro de Be] (_The Be Book_ en inglés). El Libro de Be se puede consultar en la web de Haiku, que ha sido puesto a disposición con el permiso de https://www.access-company.com/[Access Co.], los dueños actuales de la propiedad intelectual de Be.
+
+== _Kits_ y servidores 
+En la API existen varios _kits_ y servidores, cada uno vinculado a un aspecto diferente del sistema operativo.
+
+* En el *link:group__app.adoc[Kit de aplicación]* (_Application Kit_) tenemos el punto de partida para desarrollar aplicaciones y tenemos clases para manejar mensajes y para interactuar con el resto del sistema.
+* En el *link:group__game.adoc[Kit de juego]* (_Game Kit_)  tenemos clases para producir sonidos de juegos y trabajar con aplicaciones de pantalla completa.
+* En el *link:group__interface.adoc[Kit de interfaz]* (_Interface Kit_) es posible crear interfaces gráficas de usuario atractivas y adaptativas con base en las herramientas de mensajería provistas por el Kit de aplicación.
+** En la *link:layout_intro.adoc[API de diseño]* tenemos un nuevo elemento además del Kit de interfaz propio de Haiku, donde es posible ofrecer recursos para diseñar una aplicación de forma sencilla y flexible.
+* En el *link:group__locale.adoc[Kit de configuración regional]* (_Locale Kit_) tenemos clases para que en una aplicación podamos utilizar varios idiomas, zonas horarias, convenciones de formato de números, entre otros.
+* En el *link:group__mail.adoc[Kit de correo]* (_Mail Kit_) tenemos clases para trabajar con archivos, carpetas, protocolos y filtros de correo electrónico, como parte del sistema único de gestión de correos electrónicos de Haiku.
+* En el *link:group__media.adoc[Kit de medios]* (_Media Kit_) tenemos una interfaz unificada y constante para que intercomunicar las transmisiones de medios con las aplicaciones en Haiku.
+* En el *link:group__midi2.adoc[Kit de MIDI 2]* (_MIDI 2 Kit_) tenemos una interfaz para que sea posible generar, procesar y reproducir música en formato MIDI. Para obtener información sobre el link:midi1.adoc[*Kit de MIDI antiguo* (libmidi.so)] también se incluye su documentación.
+* En el *link:group__network.adoc[Kit de redes]* (_Network Kit_) tenemos todo lo relacionado con las redes, desde las configuraciones de la dirección IP de la interfaz de red hasta las conexiones HTTP.
+* En el *link:group__storage.adoc[Kit de almacenamiento]* (_Storage Kit_) tenemos una serie de clases relacionadas con el almacenamiento y el acopio de información de una unidad de almacenamiento de datos.
+* En el *link:group__support.adoc[Kit de soporte]* (_Support Kit_) tenemos clases de apoyo para usar en una aplicación, por ejemplo, recursos para la seguridad de hilos, entrada y salida, así como serialización.
+* En el *link:group_translation.adoc[Kit de traducción]* (_Translation Kit_) tenemos un marco para convertir flujos de datos entre formatos de medios.
+
+== Temas especiales 
+* *link:drivers.adoc[Controladores de dispositivo]*
+* *link:keyboard.adoc[Teclado]*
+* *link:json.adoc[Manejo de JSON]*
+
+== Fuente 
+* https://www.haiku-os.org/docs/api/index.html
+
