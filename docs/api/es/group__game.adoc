@@ -1,0 +1,21 @@
+= _Kit_ de juego
+El *_Kit_ de juego* proporciona clases para elaborar sonidos de juegos y para crear aplicaciones en pantalla completa. 
+
+== Archivos 
+[cols="<.<,<.<" width="100%"]
+|==========================
+|archivo|link:DirectWindow_8h.adoc[DirectWindow.h]
+2.1+|Proporciona la clase link:classBDirectWindow.adoc[BDirectWindow]. 
+|archivo|link:FileGameSound_8h.adoc[FileGameSound.h]
+2.1+|Proporciona la clase link:classBFileGameSound.adoc[BFileGameSound]. 
+|archivo|link:GameProducer_8h.adoc[GameProducer.h]
+2.1+|Proporciona la clase link:classGameProducer.adoc[GameProducer]. 
+|==========================
+
+== Clases
+
+== Descripción
+El _Kit_ de juego provee clases para elaborar sonidos de juegos y para trabajar con aplicaciones en pantalla completa. 
+
+== Fuente
+* https://www.haiku-os.org/docs/api/group__game.html
